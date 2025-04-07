@@ -127,11 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CarthageUnits.cpp" />
     <ClCompile Include="OopCreatePatternsProject.cpp" />
     <ClCompile Include="Unit.cpp" />
     <ClCompile Include="UnitFactory.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AbstractFacories.h" />
+    <ClInclude Include="CarthageUnits.h" />
+    <ClInclude Include="RomanUnits.h" />
     <ClInclude Include="Unit.h" />
     <ClInclude Include="UnitFactory.h" />
   </ItemGroup>

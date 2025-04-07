@@ -9,18 +9,33 @@ enum class Citizenship
 	Persian
 };
 
+std::string CitizenshipStr[3] = { "Roman", "Carthage", "Persian" };
+
+enum class UnitType
+{
+	Infantry,
+	Archer,
+	Horseman
+};
+
+std::string UnitTypeStr[3] = { "Infantry", "Archer", "Horseman" };
+
 class Unit
 {
 protected:
 	Citizenship citizenship;
+	UnitType type;
 	std::string title;
 	int attack;
 	int defend;
 
 public:
-	Unit(Citizenship citizenship) :
-		citizenship{ citizenship },
+	Unit() :
+		citizenship{}, type{},
 		title{""}, attack{}, defend{}{}
+
+	Citizenship& Citizenship() { return citizenship; }
+	UnitType& Type() { return type; }
 
 	std::string& Title() { return title; }
 	int& Attack() { return attack; }
@@ -30,15 +45,44 @@ public:
 	virtual void Battle(Unit* enemy) = 0;
 };
 
+class Infantry : public Unit
+{
+protected:
+	std::string coldWeapon;
+public:
+	Infantry()
+	{
+		this->type = UnitType::Infantry;
+		this->attack = 4;
+		this->defend = 4;
+	}
 
+	std::string& ColdWeapon() { return coldWeapon; }
+};
+
+class Archer : public Unit
+{
+protected:
+	std::string bowWeapon;
+public:
+	Archer()
+	{
+		this->type = UnitType::Infantry;
+		this->attack = 6;
+		this->defend = 3;
+	}
+
+	std::string& BowWeapon() { return bowWeapon; }
+};
+
+
+/*
 class RomanUnit : public Unit
 {
 public:
 	RomanUnit() : Unit(Citizenship::Roman)
 	{
 		this->title = "Roman Unit";
-		this->attack = 5;
-		this->defend = 3;
 	}
 
 	void Move() override
@@ -102,6 +146,6 @@ public:
 	}
 
 };
-
+*/
 
 
