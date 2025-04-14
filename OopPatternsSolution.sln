@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OopCreatorPatternsBuilderPr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OopSingletonProject", "OopSingletonProject\OopSingletonProject.vcxproj", "{26A59CF8-89D2-4E44-B263-165D882A9C7A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OopStructualPatterns", "OopStructualPatterns\OopStructualPatterns.vcxproj", "{AAB4E33B-799E-41B5-8469-B544DB04563B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{26A59CF8-89D2-4E44-B263-165D882A9C7A}.Release|x64.Build.0 = Release|x64
 		{26A59CF8-89D2-4E44-B263-165D882A9C7A}.Release|x86.ActiveCfg = Release|Win32
 		{26A59CF8-89D2-4E44-B263-165D882A9C7A}.Release|x86.Build.0 = Release|Win32
+		{AAB4E33B-799E-41B5-8469-B544DB04563B}.Debug|x64.ActiveCfg = Debug|x64
+		{AAB4E33B-799E-41B5-8469-B544DB04563B}.Debug|x64.Build.0 = Debug|x64
+		{AAB4E33B-799E-41B5-8469-B544DB04563B}.Debug|x86.ActiveCfg = Debug|Win32
+		{AAB4E33B-799E-41B5-8469-B544DB04563B}.Debug|x86.Build.0 = Debug|Win32
+		{AAB4E33B-799E-41B5-8469-B544DB04563B}.Release|x64.ActiveCfg = Release|x64
+		{AAB4E33B-799E-41B5-8469-B544DB04563B}.Release|x64.Build.0 = Release|x64
+		{AAB4E33B-799E-41B5-8469-B544DB04563B}.Release|x86.ActiveCfg = Release|Win32
+		{AAB4E33B-799E-41B5-8469-B544DB04563B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
